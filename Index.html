@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Preguntas Completo - Validación Startups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --accent: #6366f1;
+            --success: #10b981;
+            --wrong: #ef4444;
+        }
+
+        body {
+            background-color: #020617;
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .slide {
+            background-color: var(--bg);
+            border: 1px solid #334155;
+            width: 100%;
+            max-width: 1000px;
+            aspect-ratio: 16/9;
+            border-radius: 20px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            page-break-after: always;
+            /* Para imprimir */
+        }
+
+        .header-tag {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            background-color: var(--card);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .option-letter {
+            width: 30px;
+            font-weight: 800;
+            color: #64748b;
+        }
+
+        /* Estilos de Respuesta */
+        .slide.answer-mode .option.correct {
+            border-color: var(--success);
+            background-color: rgba(16, 185, 129, 0.1);
+        }
+
+        .slide.answer-mode .option.correct .option-letter {
+            color: var(--success);
+        }
+
+        .slide.answer-mode .option:not(.correct) {
+            opacity: 0.5;
+        }
+
+        /* Sección Separadores */
+        .section-slide {
+            background: var(--accent);
+            text-align: center;
+            align-items: center;
+        }
+
+        .section-slide h1 {
+            font-size: 80px;
+            margin: 0;
+            color: white;
+        }
+
+        .section-slide p {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Estilos para Resolver */
+        .case-box {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .solution-box {
+            border-left: 4px solid var(--success);
+            background: rgba(16, 185, 129, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+    <div class="slide section-slide">
+        <h1>VALIDACIÓN<br>DE STARTUPS</h1>
+        <p>Banco de Preguntas Completo: Serie A, B, C y Casos</p>
+    </div>
+
+    <!-- ================= SERIE A ================= -->
+    <div class="slide section-slide" style="background: #3b82f6;">
+        <h1>SERIE A</h1>
+        <p>Conceptos Fundamentales</p>
+    </div>
+
+    <!-- P1 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 1</span>
+        <h2>Según CB Insights (2023), ¿qué porcentaje de startups fracasan por falta de demanda en el mercado?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 25%</div>
+            <div class="option"><span class="option-letter">B</span> 42%</div>
+            <div class="option"><span class="option-letter">C</span> 57%</div>
+            <div class="option"><span class="option-letter">D</span> 15%</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 1 (Respuesta)</span>
+        <h2>Según CB Insights (2023), ¿qué porcentaje de startups fracasan por falta de demanda en el mercado?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 25%</div>
+            <div class="option correct"><span class="option-letter">B</span> 42% <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> 57%</div>
+            <div class="option"><span class="option-letter">D</span> 15%</div>
+        </div>
+    </div>
+
+    <!-- P2 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 2</span>
+        <h2>Calcular el TAM multiplicando el precio mensual de una app por el número total de personas interesadas en
+            fitness es un ejemplo del método:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Top-Down</div>
+            <div class="option"><span class="option-letter">B</span> Value-Theory</div>
+            <div class="option"><span class="option-letter">C</span> Bottom-Up</div>
+            <div class="option"><span class="option-letter">D</span> De competencia</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 2 (Respuesta)</span>
+        <h2>Calcular el TAM multiplicando el precio mensual de una app por el número total de personas interesadas en
+            fitness es un ejemplo del método:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Top-Down</div>
+            <div class="option"><span class="option-letter">B</span> Value-Theory</div>
+            <div class="option correct"><span class="option-letter">C</span> Bottom-Up <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> De competencia</div>
+        </div>
+    </div>
+
+    <!-- P3 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 3</span>
+        <h2>En la etapa de "Validación del problema", ¿en qué se centra principalmente la investigación?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> En el "cómo" resolver el problema con un prototipo.
+            </div>
+            <div class="option"><span class="option-letter">B</span> En las métricas de vanidad como los "likes".</div>
+            <div class="option"><span class="option-letter">C</span> En el "por qué" y el "qué" del problema del
+                cliente.</div>
+            <div class="option"><span class="option-letter">D</span> En el desarrollo inmediato de la solución.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 3 (Respuesta)</span>
+        <h2>En la etapa de "Validación del problema", ¿en qué se centra principalmente la investigación?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> En el "cómo" resolver el problema con un prototipo.
+            </div>
+            <div class="option"><span class="option-letter">B</span> En las métricas de vanidad como los "likes".</div>
+            <div class="option correct"><span class="option-letter">C</span> En el "por qué" y el "qué" del problema del
+                cliente. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> En el desarrollo inmediato de la solución.</div>
+        </div>
+    </div>
+
+    <!-- P4 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 4</span>
+        <h2>La "Prueba de primer clic" se utiliza fundamentalmente para:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Medir la satisfacción general del usuario.</div>
+            <div class="option"><span class="option-letter">B</span> Evaluar la intuición del diseño y la efectividad de
+                la navegación.</div>
+            <div class="option"><span class="option-letter">C</span> Realizar un test A/B de dos landing pages.</div>
+            <div class="option"><span class="option-letter">D</span> Entender la arquitectura de la información de un
+                sitio completo.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 4 (Respuesta)</span>
+        <h2>La "Prueba de primer clic" se utiliza fundamentalmente para:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Medir la satisfacción general del usuario.</div>
+            <div class="option correct"><span class="option-letter">B</span> Evaluar la intuición del diseño y la
+                efectividad de la navegación. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Realizar un test A/B de dos landing pages.</div>
+            <div class="option"><span class="option-letter">D</span> Entender la arquitectura de la información de un
+                sitio completo.</div>
+        </div>
+    </div>
+
+    <!-- P5 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 5</span>
+        <h2>¿Qué tipo de prueba es ideal para evaluar la arquitectura de información de un producto digital sin la
+            influencia del diseño visual?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Prueba de Usabilidad Moderada</div>
+            <div class="option"><span class="option-letter">B</span> Prueba A/B</div>
+            <div class="option"><span class="option-letter">C</span> Prueba de Árbol (Tree Testing)</div>
+            <div class="option"><span class="option-letter">D</span> Prueba de Guerrilla</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 5 (Respuesta)</span>
+        <h2>¿Qué tipo de prueba es ideal para evaluar la arquitectura de información de un producto digital sin la
+            influencia del diseño visual?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Prueba de Usabilidad Moderada</div>
+            <div class="option"><span class="option-letter">B</span> Prueba A/B</div>
+            <div class="option correct"><span class="option-letter">C</span> Prueba de Árbol (Tree Testing) <i
+                    class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> Prueba de Guerrilla</div>
+        </div>
+    </div>
+
+    <!-- P6 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 6</span>
+        <h2>¿Qué es un prototipo "Wizard of Oz"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un prototipo de muy alta fidelidad creado con
+                código.</div>
+            <div class="option"><span class="option-letter">B</span> Una simulación de funcionalidad automatizada
+                mediante procesos manuales "tras bambalinas".</div>
+            <div class="option"><span class="option-letter">C</span> Un boceto simple dibujado en papel.</div>
+            <div class="option"><span class="option-letter">D</span> Un video demostrativo del producto final.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 6 (Respuesta)</span>
+        <h2>¿Qué es un prototipo "Wizard of Oz"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un prototipo de muy alta fidelidad creado con
+                código.</div>
+            <div class="option correct"><span class="option-letter">B</span> Una simulación de funcionalidad
+                automatizada mediante procesos manuales "tras bambalinas". <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Un boceto simple dibujado en papel.</div>
+            <div class="option"><span class="option-letter">D</span> Un video demostrativo del producto final.</div>
+        </div>
+    </div>
+
+    <!-- P7 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 7</span>
+        <h2>El error de "Sesgo de confirmación" al validar una solución consiste en:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Invertir demasiados recursos antes de tener
+                suficiente validación.</div>
+            <div class="option"><span class="option-letter">B</span> Validar con un grupo que no representa al cliente
+                objetivo real.</div>
+            <div class="option"><span class="option-letter">C</span> Interpretar selectivamente los datos que confirman
+                tus hipótesis preexistentes.</div>
+            <div class="option"><span class="option-letter">D</span> Confundir la cortesía de los usuarios con un
+                interés real en la solución.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 7 (Respuesta)</span>
+        <h2>El error de "Sesgo de confirmación" al validar una solución consiste en:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Invertir demasiados recursos antes de tener
+                suficiente validación.</div>
+            <div class="option"><span class="option-letter">B</span> Validar con un grupo que no representa al cliente
+                objetivo real.</div>
+            <div class="option correct"><span class="option-letter">C</span> Interpretar selectivamente los datos que
+                confirman tus hipótesis preexistentes. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> Confundir la cortesía de los usuarios con un
+                interés real en la solución.</div>
+        </div>
+    </div>
+
+    <!-- P8 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 8</span>
+        <h2>La técnica de priorización MoSCoW ayuda a los equipos a:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Calcular el TAM de forma precisa.</div>
+            <div class="option"><span class="option-letter">B</span> Categorizar características según su importancia y
+                viabilidad para el MVP.</div>
+            <div class="option"><span class="option-letter">C</span> Realizar pruebas de usabilidad remotas.</div>
+            <div class="option"><span class="option-letter">D</span> Definir la estrategia de precios.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 8 (Respuesta)</span>
+        <h2>La técnica de priorización MoSCoW ayuda a los equipos a:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Calcular el TAM de forma precisa.</div>
+            <div class="option correct"><span class="option-letter">B</span> Categorizar características según su
+                importancia y viabilidad para el MVP. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Realizar pruebas de usabilidad remotas.</div>
+            <div class="option"><span class="option-letter">D</span> Definir la estrategia de precios.</div>
+        </div>
+    </div>
+
+    <!-- P9 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 9</span>
+        <h2>¿Cuál de las siguientes es una herramienta específica para realizar beta testing en aplicaciones IOS?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> TestFairy</div>
+            <div class="option"><span class="option-letter">B</span> Applivery</div>
+            <div class="option"><span class="option-letter">C</span> TestFlight</div>
+            <div class="option"><span class="option-letter">D</span> Hubble</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 9 (Respuesta)</span>
+        <h2>¿Cuál de las siguientes es una herramienta específica para realizar beta testing en aplicaciones IOS?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> TestFairy</div>
+            <div class="option"><span class="option-letter">B</span> Applivery</div>
+            <div class="option correct"><span class="option-letter">C</span> TestFlight <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> Hubble</div>
+        </div>
+    </div>
+
+    <!-- P10 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 10</span>
+        <h2>El "Método Value-Theory" para calcular el TAM es especialmente útil para:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mercados maduros con muchos datos públicos.</div>
+            <div class="option"><span class="option-letter">B</span> Productos innovadores sin comparables directos.
+            </div>
+            <div class="option"><span class="option-letter">C</span> Startups con recursos limitados.</div>
+            <div class="option"><span class="option-letter">D</span> Calcular el SOM.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 10 (Respuesta)</span>
+        <h2>El "Método Value-Theory" para calcular el TAM es especialmente útil para:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mercados maduros con muchos datos públicos.</div>
+            <div class="option correct"><span class="option-letter">B</span> Productos innovadores sin comparables
+                directos. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Startups con recursos limitados.</div>
+            <div class="option"><span class="option-letter">D</span> Calcular el SOM.</div>
+        </div>
+    </div>
+
+    <!-- P11 -->
+    <div class="slide">
+        <span class="header-tag">Serie A - Pregunta 11</span>
+        <h2>¿Cuál de las siguientes opciones describe mejor el "principio de falsabilidad" para evitar sesgos?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Diseñar experimentos que solo confirmen tus
+                hipótesis.</div>
+            <div class="option"><span class="option-letter">B</span> Diseñar experimentos que puedan refutar claramente
+                tus hipótesis.</div>
+            <div class="option"><span class="option-letter">C</span> Usar solo datos cualitativos.</div>
+            <div class="option"><span class="option-letter">D</span> Preguntar a los usuarios si les gusta tu idea.
+            </div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie A - Pregunta 11 (Respuesta)</span>
+        <h2>¿Cuál de las siguientes opciones describe mejor el "principio de falsabilidad" para evitar sesgos?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Diseñar experimentos que solo confirmen tus
+                hipótesis.</div>
+            <div class="option correct"><span class="option-letter">B</span> Diseñar experimentos que puedan refutar
+                claramente tus hipótesis. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Usar solo datos cualitativos.</div>
+            <div class="option"><span class="option-letter">D</span> Preguntar a los usuarios si les gusta tu idea.
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SERIE B ================= -->
+    <div class="slide section-slide" style="background: #ec4899;">
+        <h1>SERIE B</h1>
+        <p>Métricas, TAM/SAM/SOM y Validación</p>
+    </div>
+
+    <!-- B1 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 1</span>
+        <h2>¿Qué representa el TAM (Total Addressable Market)?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El mercado que puedes capturar en el primer año.
+            </div>
+            <div class="option"><span class="option-letter">B</span> El ingreso total potencial si se alcanza el 100% de
+                cuota en un mercado específico.</div>
+            <div class="option"><span class="option-letter">C</span> La porción del mercado que puedes servir con tu
+                tecnología actual.</div>
+            <div class="option"><span class="option-letter">D</span> Los clientes que ya han comprado un producto
+                similar.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 1 (Respuesta)</span>
+        <h2>¿Qué representa el TAM (Total Addressable Market)?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El mercado que puedes capturar en el primer año.
+            </div>
+            <div class="option correct"><span class="option-letter">B</span> El ingreso total potencial si se alcanza el
+                100% de cuota en un mercado específico. <i class="fa-solid fa-check" style="margin-left:auto;"></i>
+            </div>
+            <div class="option"><span class="option-letter">C</span> La porción del mercado que puedes servir con tu
+                tecnología actual.</div>
+            <div class="option"><span class="option-letter">D</span> Los clientes que ya han comprado un producto
+                similar.</div>
+        </div>
+    </div>
+
+    <!-- B2 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 2</span>
+        <h2>El SAM (Serviceable Available Market) se define como:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El mercado total global, sin filtros.</div>
+            <div class="option"><span class="option-letter">B</span> La porción del TAM que puedes alcanzar con tu
+                modelo de negocio y operaciones.</div>
+            <div class="option"><span class="option-letter">C</span> El objetivo de ventas para el primer trimestre.
+            </div>
+            <div class="option"><span class="option-letter">D</span> El número de clientes que capturarás con tu
+                estrategia de marketing inicial.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 2 (Respuesta)</span>
+        <h2>El SAM (Serviceable Available Market) se define como:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El mercado total global, sin filtros.</div>
+            <div class="option correct"><span class="option-letter">B</span> La porción del TAM que puedes alcanzar con
+                tu modelo de negocio y operaciones. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> El objetivo de ventas para el primer trimestre.
+            </div>
+            <div class="option"><span class="option-letter">D</span> El número de clientes que capturarás con tu
+                estrategia de marketing inicial.</div>
+        </div>
+    </div>
+
+    <!-- B3 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 3</span>
+        <h2>El SOM (Serviceable Obtainable Market) representa:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> La porción realista del SAM que una startup puede
+                capturar a corto-medio plazo.</div>
+            <div class="option"><span class="option-letter">B</span> El valor total de todas las empresas del sector.
+            </div>
+            <div class="option"><span class="option-letter">C</span> El 100% del mercado disponible accesible.</div>
+            <div class="option"><span class="option-letter">D</span> El mercado total menos los competidores.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 3 (Respuesta)</span>
+        <h2>El SOM (Serviceable Obtainable Market) representa:</h2>
+        <div class="options">
+            <div class="option correct"><span class="option-letter">A</span> La porción realista del SAM que una startup
+                puede capturar a corto-medio plazo. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">B</span> El valor total de todas las empresas del sector.
+            </div>
+            <div class="option"><span class="option-letter">C</span> El 100% del mercado disponible accesible.</div>
+            <div class="option"><span class="option-letter">D</span> El mercado total menos los competidores.</div>
+        </div>
+    </div>
+
+    <!-- B4 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 4</span>
+        <h2>¿Cuál de las siguientes es una señal de "alta confianza" en la validación temprana?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un comentario positivo en una entrevista.</div>
+            <div class="option"><span class="option-letter">B</span> Un prepago o compromiso financiero.</div>
+            <div class="option"><span class="option-letter">C</span> Compartir un email voluntariamente.</div>
+            <div class="option"><span class="option-letter">D</span> Lenguaje corporal positivo durante una demo.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 4 (Respuesta)</span>
+        <h2>¿Cuál de las siguientes es una señal de "alta confianza" en la validación temprana?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un comentario positivo en una entrevista.</div>
+            <div class="option correct"><span class="option-letter">B</span> Un prepago o compromiso financiero. <i
+                    class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Compartir un email voluntariamente.</div>
+            <div class="option"><span class="option-letter">D</span> Lenguaje corporal positivo durante una demo.</div>
+        </div>
+    </div>
+
+    <!-- B5 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 5</span>
+        <h2>Según el principio de Nielsen Norman, ¿cuántos usuarios son generalmente suficientes para revelar el 85% de
+            los problemas de usabilidad?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 1</div>
+            <div class="option"><span class="option-letter">B</span> 5</div>
+            <div class="option"><span class="option-letter">C</span> 20</div>
+            <div class="option"><span class="option-letter">D</span> 50</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 5 (Respuesta)</span>
+        <h2>Según el principio de Nielsen Norman, ¿cuántos usuarios son generalmente suficientes para revelar el 85% de
+            los problemas de usabilidad?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 1</div>
+            <div class="option correct"><span class="option-letter">B</span> 5 <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> 20</div>
+            <div class="option"><span class="option-letter">D</span> 50</div>
+        </div>
+    </div>
+
+    <!-- B6 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 6</span>
+        <h2>La validación que se enfoca en verificar si la solución propuesta resuelve el problema identificado se
+            llama:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Validación del problema</div>
+            <div class="option"><span class="option-letter">B</span> Validación de la solución</div>
+            <div class="option"><span class="option-letter">C</span> Validación del mercado</div>
+            <div class="option"><span class="option-letter">D</span> Validación del MVP</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 6 (Respuesta)</span>
+        <h2>La validación que se enfoca en verificar si la solución propuesta resuelve el problema identificado se
+            llama:</h2>
+        <div class="options">
+            <div class="option correct"><span class="option-letter">A</span> Validación del problema <i
+                    class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">B</span> Validación de la solución</div>
+            <div class="option"><span class="option-letter">C</span> Validación del mercado</div>
+            <div class="option"><span class="option-letter">D</span> Validación del MVP</div>
+        </div>
+    </div>
+
+    <!-- B7 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 7</span>
+        <h2>En el marco AARRR para métricas de validación, la "R" de Retención se mide a través de:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El Costo de Adquisición de Cliente (CAC).</div>
+            <div class="option"><span class="option-letter">B</span> El porcentaje de usuarios que completan el
+                onboarding.</div>
+            <div class="option"><span class="option-letter">C</span> El uso repetido del producto y la tasa de abandono
+                (churn).</div>
+            <div class="option"><span class="option-letter">D</span> El Net Promoter Score (NPS).</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 7 (Respuesta)</span>
+        <h2>En el marco AARRR para métricas de validación, la "R" de Retención se mide a través de:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El Costo de Adquisición de Cliente (CAC).</div>
+            <div class="option"><span class="option-letter">B</span> El porcentaje de usuarios que completan el
+                onboarding.</div>
+            <div class="option correct"><span class="option-letter">C</span> El uso repetido del producto y la tasa de
+                abandono (churn). <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> El Net Promoter Score (NPS).</div>
+        </div>
+    </div>
+
+    <!-- B8 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 8</span>
+        <h2>¿Cuál es el principal objetivo de realizar Pruebas de Concepto (PoC)?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Lanzar el producto final al mercado.</div>
+            <div class="option"><span class="option-letter">B</span> Reducir riesgos, obtener retroalimentación temprana
+                y demostrar viabilidad.</div>
+            <div class="option"><span class="option-letter">C</span> Medir el Net Promoter Score (NPS).</div>
+            <div class="option"><span class="option-letter">D</span> Diseñar la interfaz de usuario final.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 8 (Respuesta)</span>
+        <h2>¿Cuál es el principal objetivo de realizar Pruebas de Concepto (PoC)?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Lanzar el producto final al mercado.</div>
+            <div class="option correct"><span class="option-letter">B</span> Reducir riesgos, obtener retroalimentación
+                temprana y demostrar viabilidad. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Medir el Net Promoter Score (NPS).</div>
+            <div class="option"><span class="option-letter">D</span> Diseñar la interfaz de usuario final.</div>
+        </div>
+    </div>
+
+    <!-- B9 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 9</span>
+        <h2>¿Cuál es una ventaja clave de las pruebas en persona sobre las pruebas remotas?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Son más económicas y rápidas.</div>
+            <div class="option"><span class="option-letter">B</span> Permiten observar directamente el lenguaje corporal
+                y las expresiones faciales del usuario.</div>
+            <div class="option"><span class="option-letter">C</span> Permiten reclutar participantes de cualquier parte
+                del mundo fácilmente.</div>
+            <div class="option"><span class="option-letter">D</span> No requieren un moderador.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 9 (Respuesta)</span>
+        <h2>¿Cuál es una ventaja clave de las pruebas en persona sobre las pruebas remotas?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Son más económicas y rápidas.</div>
+            <div class="option correct"><span class="option-letter">B</span> Permiten observar directamente el lenguaje
+                corporal y las expresiones faciales del usuario. <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Permiten reclutar participantes de cualquier parte
+                del mundo fácilmente.</div>
+            <div class="option"><span class="option-letter">D</span> No requieren un moderador.</div>
+        </div>
+    </div>
+
+    <!-- B10 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 10</span>
+        <h2>La startup Superhuman validó su Product-Market Fit mediante una métrica clave que preguntaba a los usuarios:
+        </h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> ¿Recomendarías este producto a un amigo?</div>
+            <div class="option"><span class="option-letter">B</span> ¿Qué tan satisfecho estás con el producto del 1 al
+                10?</div>
+            <div class="option"><span class="option-letter">C</span> ¿Qué tan triste estarías si no pudieras usar más
+                este producto?</div>
+            <div class="option"><span class="option-letter">D</span> ¿Cuánto pagarías por este producto?</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 10 (Respuesta)</span>
+        <h2>La startup Superhuman validó su Product-Market Fit mediante una métrica clave que preguntaba a los usuarios:
+        </h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> ¿Recomendarías este producto a un amigo?</div>
+            <div class="option"><span class="option-letter">B</span> ¿Qué tan satisfecho estás con el producto del 1 al
+                10?</div>
+            <div class="option correct"><span class="option-letter">C</span> ¿Qué tan triste estarías si no pudieras
+                usar más este producto? <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> ¿Cuánto pagarías por este producto?</div>
+        </div>
+    </div>
+
+    <!-- B11 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 11</span>
+        <h2>En la curva de adopción de clientes, ¿qué segmento viene inmediatamente después de los "Innovadores"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mayoría Temprana</div>
+            <div class="option"><span class="option-letter">B</span> Mayoría Tardía</div>
+            <div class="option"><span class="option-letter">C</span> Rezagados</div>
+            <div class="option"><span class="option-letter">D</span> Early Adopters</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 11 (Respuesta)</span>
+        <h2>En la curva de adopción de clientes, ¿qué segmento viene inmediatamente después de los "Innovadores"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mayoría Temprana</div>
+            <div class="option"><span class="option-letter">B</span> Mayoría Tardía</div>
+            <div class="option"><span class="option-letter">C</span> Rezagados</div>
+            <div class="option correct"><span class="option-letter">D</span> Early Adopters <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+        </div>
+    </div>
+
+    <!-- B12 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 12</span>
+        <h2>El caso de Dropbox, que obtuvo 75,000 registros antes de construir el producto, es un ejemplo exitoso de:
+        </h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un MVP técnico completo.</div>
+            <div class="option"><span class="option-letter">B</span> Una prueba de concepto con un video explicativo y
+                una landing page.</div>
+            <div class="option"><span class="option-letter">C</span> Una campaña de crowdfunding.</div>
+            <div class="option"><span class="option-letter">D</span> Una prueba de usabilidad con 5 usuarios.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 12 (Respuesta)</span>
+        <h2>El caso de Dropbox, que obtuvo 75,000 registros antes de construir el producto, es un ejemplo exitoso de:
+        </h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un MVP técnico completo.</div>
+            <div class="option correct"><span class="option-letter">B</span> Una prueba de concepto con un video
+                explicativo y una landing page. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Una campaña de crowdfunding.</div>
+            <div class="option"><span class="option-letter">D</span> Una prueba de usabilidad con 5 usuarios.</div>
+        </div>
+    </div>
+
+    <!-- B13 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 13</span>
+        <h2>La "Prueba de Fricción" busca evaluar:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Cuánto le gusta al usuario el diseño visual.</div>
+            <div class="option"><span class="option-letter">B</span> Cuánto esfuerzo está dispuesto a hacer el cliente
+                para obtener tu solución.</div>
+            <div class="option"><span class="option-letter">C</span> Cuánto pagaría el cliente por la solución.</div>
+            <div class="option"><span class="option-letter">D</span> Si la solución es mejor que la de la competencia.
+            </div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 13 (Respuesta)</span>
+        <h2>La "Prueba de Fricción" busca evaluar:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Cuánto le gusta al usuario el diseño visual.</div>
+            <div class="option correct"><span class="option-letter">B</span> Cuánto esfuerzo está dispuesto a hacer el
+                cliente para obtener tu solución. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Cuánto pagaría el cliente por la solución.</div>
+            <div class="option"><span class="option-letter">D</span> Si la solución es mejor que la de la competencia.
+            </div>
+        </div>
+    </div>
+
+    <!-- B14 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 14</span>
+        <h2>¿Qué es una "métrica de vanidad"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Una métrica que mide el valor real de tu solución.
+            </div>
+            <div class="option"><span class="option-letter">B</span> Un dato que se ve bien pero no refleja el
+                comportamiento real o el valor (ej. total de registros).</div>
+            <div class="option"><span class="option-letter">C</span> El Costo de Adquisición de Clientes (CAC).</div>
+            <div class="option"><span class="option-letter">D</span> La tasa de retención de usuarios.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 14 (Respuesta)</span>
+        <h2>¿Qué es una "métrica de vanidad"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Una métrica que mide el valor real de tu solución.
+            </div>
+            <div class="option correct"><span class="option-letter">B</span> Un dato que se ve bien pero no refleja el
+                comportamiento real o el valor (ej. total de registros). <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> El Costo de Adquisición de Clientes (CAC).</div>
+            <div class="option"><span class="option-letter">D</span> La tasa de retención de usuarios.</div>
+        </div>
+    </div>
+
+    <!-- B15 -->
+    <div class="slide">
+        <span class="header-tag">Serie B - Pregunta 15</span>
+        <h2>El primer paso en el proceso de "Customer Development" recordado en las diapositivas es:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Crear prototipos</div>
+            <div class="option"><span class="option-letter">B</span> Priorizar características</div>
+            <div class="option"><span class="option-letter">C</span> Empatía con el Usuario</div>
+            <div class="option"><span class="option-letter">D</span> Escribir código</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie B - Pregunta 15 (Respuesta)</span>
+        <h2>El primer paso en el proceso de "Customer Development" recordado en las diapositivas es:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Crear prototipos</div>
+            <div class="option"><span class="option-letter">B</span> Priorizar características</div>
+            <div class="option correct"><span class="option-letter">C</span> Empatía con el Usuario <i
+                    class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> Escribir código</div>
+        </div>
+    </div>
+
+    <!-- ================= RESOLVER (Parte 1) ================= -->
+    <div class="slide section-slide" style="background: #10b981;">
+        <h1>RESOLVER (PARTE 1)</h1>
+        <p>Casos Prácticos</p>
+    </div>
+
+    <!-- R1 -->
+    <div class="slide">
+        <span class="header-tag">Caso Práctico 1</span>
+        <h2>El Error de "Preguntar a Amigos"</h2>
+        <div class="case-box">
+            <p><strong>Situación:</strong> "Le mostraré el prototipo a 10 amigos, les preguntaré si les gusta del 1 al
+                10 y si la respuesta es alta, empezaremos a programar".</p>
+        </div>
+        <div class="case-box solution-box">
+            <h3>3 Errores Graves:</h3>
+            <ul>
+                <li><strong>Mienten por cariño:</strong> Falsos positivos para no herirte.</li>
+                <li><strong>Muestra sesgada:</strong> Tus amigos no son tu mercado real.</li>
+                <li><strong>Pregunta viciada:</strong> "¿Te gusta?" busca aplausos, no verdad (Sesgo de confirmación).
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slide">
+        <span class="header-tag">Caso Práctico 1 (Plan Mejorado)</span>
+        <h2>Plan de Validación en 3 Pasos</h2>
+        <div class="case-box solution-box">
+            <ul>
+                <li><strong>1. Busca el dolor:</strong> Entrevista a desconocidos sobre sus problemas actuales.</li>
+                <li><strong>2. "Vende humo":</strong> Crea una Landing Page y mide intentos reales de registro.</li>
+                <li><strong>3. Mide retención:</strong> Lanza un MVP básico y mide si vuelven a usarlo al día siguiente.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- R2 -->
+    <div class="slide">
+        <span class="header-tag">Caso Práctico 2</span>
+        <h2>Narrativa TAM/SAM/SOM para Inversores</h2>
+        <div class="case-box">
+            <p><strong>Caso:</strong> Pitch para una PWA de E-learning.</p>
+        </div>
+        <div class="options">
+            <div class="option">
+                <div>
+                    <strong style="color:#60a5fa">TAM (La Visión):</strong><br>
+                    Mercado total de E-learning. "Apuntamos a un mercado gigante en crecimiento."
+                </div>
+            </div>
+            <div class="option">
+                <div>
+                    <strong style="color:#60a5fa">SAM (El Enfoque):</strong><br>
+                    Jóvenes LatAm (Gen Z). "Nos enfocamos en quienes necesitan micro-learning."
+                </div>
+            </div>
+            <div class="option">
+                <div>
+                    <strong style="color:#60a5fa">SOM (La Ejecución):</strong><br>
+                    Estudiantes técnicos iniciales. "Capturaremos el 1-2% local mediante comunidades Discord."
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SERIE C ================= -->
+    <div class="slide section-slide" style="background: #a855f7;">
+        <h1>SERIE C</h1>
+        <p>Examen Final Integrado</p>
+    </div>
+
+    <!-- C1 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 1</span>
+        <h2>Según CB Insights (2023), ¿qué porcentaje de startups fracasan por falta de demanda en el mercado?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 25%</div>
+            <div class="option"><span class="option-letter">B</span> 42%</div>
+            <div class="option"><span class="option-letter">C</span> 57%</div>
+            <div class="option"><span class="option-letter">D</span> 15%</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 1 (Respuesta)</span>
+        <h2>Según CB Insights (2023), ¿qué porcentaje de startups fracasan por falta de demanda en el mercado?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 25%</div>
+            <div class="option correct"><span class="option-letter">B</span> 42% <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> 57%</div>
+            <div class="option"><span class="option-letter">D</span> 15%</div>
+        </div>
+    </div>
+
+    <!-- C2 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 2</span>
+        <h2>El SAM (Serviceable Available Market) se define como:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El mercado total global, sin filtros.</div>
+            <div class="option"><span class="option-letter">B</span> La porción del TAM que puedes alcanzar con tu
+                modelo de negocio y operaciones.</div>
+            <div class="option"><span class="option-letter">C</span> El objetivo de ventas para el primer trimestre.
+            </div>
+            <div class="option"><span class="option-letter">D</span> El número de clientes que capturarás con tu
+                estrategia de marketing inicial.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 2 (Respuesta)</span>
+        <h2>El SAM (Serviceable Available Market) se define como:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> El mercado total global, sin filtros.</div>
+            <div class="option correct"><span class="option-letter">B</span> La porción del TAM que puedes alcanzar con
+                tu modelo de negocio y operaciones. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> El objetivo de ventas para el primer trimestre.
+            </div>
+            <div class="option"><span class="option-letter">D</span> El número de clientes que capturarás con tu
+                estrategia de marketing inicial.</div>
+        </div>
+    </div>
+
+    <!-- C3 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 3</span>
+        <h2>En la etapa de "Validación del problema", ¿en qué se centra principalmente la investigación?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> En el "cómo" resolver el problema con un prototipo.
+            </div>
+            <div class="option"><span class="option-letter">B</span> En las métricas de vanidad como los "likes".</div>
+            <div class="option"><span class="option-letter">C</span> En el "por qué" y el "qué" del problema del
+                cliente.</div>
+            <div class="option"><span class="option-letter">D</span> En el desarrollo inmediato de la solución.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 3 (Respuesta)</span>
+        <h2>En la etapa de "Validación del problema", ¿en qué se centra principalmente la investigación?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> En el "cómo" resolver el problema con un prototipo.
+            </div>
+            <div class="option"><span class="option-letter">B</span> En las métricas de vanidad como los "likes".</div>
+            <div class="option correct"><span class="option-letter">C</span> En el "por qué" y el "qué" del problema del
+                cliente. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> En el desarrollo inmediato de la solución.</div>
+        </div>
+    </div>
+
+    <!-- C4 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 4</span>
+        <h2>Según el principio de Nielsen Norman, ¿cuántos usuarios son generalmente suficientes para revelar el 85% de
+            los problemas de usabilidad?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 1</div>
+            <div class="option"><span class="option-letter">B</span> 5</div>
+            <div class="option"><span class="option-letter">C</span> 20</div>
+            <div class="option"><span class="option-letter">D</span> 50</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 4 (Respuesta)</span>
+        <h2>Según el principio de Nielsen Norman, ¿cuántos usuarios son generalmente suficientes para revelar el 85% de
+            los problemas de usabilidad?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 1</div>
+            <div class="option correct"><span class="option-letter">B</span> 5 <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> 20</div>
+            <div class="option"><span class="option-letter">D</span> 50</div>
+        </div>
+    </div>
+
+    <!-- C5 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 5</span>
+        <h2>¿Qué es un prototipo "Wizard of Oz"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un prototipo de muy alta fidelidad creado con
+                código.</div>
+            <div class="option"><span class="option-letter">B</span> Una simulación de funcionalidad automatizada
+                mediante procesos manuales "tras bambalinas".</div>
+            <div class="option"><span class="option-letter">C</span> Un boceto simple dibujado en papel.</div>
+            <div class="option"><span class="option-letter">D</span> Un video demostrativo del producto final.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 5 (Respuesta)</span>
+        <h2>¿Qué es un prototipo "Wizard of Oz"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Un prototipo de muy alta fidelidad creado con
+                código.</div>
+            <div class="option correct"><span class="option-letter">B</span> Una simulación de funcionalidad
+                automatizada mediante procesos manuales "tras bambalinas". <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Un boceto simple dibujado en papel.</div>
+            <div class="option"><span class="option-letter">D</span> Un video demostrativo del producto final.</div>
+        </div>
+    </div>
+
+    <!-- C6 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 6</span>
+        <h2>El error de "Sesgo de confirmación" al validar una solución consiste en:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Invertir demasiados recursos antes de tener
+                suficiente validación.</div>
+            <div class="option"><span class="option-letter">B</span> Validar con un grupo que no representa al cliente
+                objetivo real.</div>
+            <div class="option"><span class="option-letter">C</span> Interpretar selectivamente los datos que confirman
+                tus hipótesis preexistentes.</div>
+            <div class="option"><span class="option-letter">D</span> Confundir la cortesía de los usuarios con un
+                interés real en la solución.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 6 (Respuesta)</span>
+        <h2>El error de "Sesgo de confirmación" al validar una solución consiste en:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Invertir demasiados recursos antes de tener
+                suficiente validación.</div>
+            <div class="option"><span class="option-letter">B</span> Validar con un grupo que no representa al cliente
+                objetivo real.</div>
+            <div class="option correct"><span class="option-letter">C</span> Interpretar selectivamente los datos que
+                confirman tus hipótesis preexistentes. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> Confundir la cortesía de los usuarios con un
+                interés real en la solución.</div>
+        </div>
+    </div>
+
+    <!-- C7 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 7</span>
+        <h2>La técnica de priorización MoSCoW ayuda a los equipos a:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Calcular el TAM de forma precisa.</div>
+            <div class="option"><span class="option-letter">B</span> Categorizar características según su importancia y
+                viabilidad para el MVP.</div>
+            <div class="option"><span class="option-letter">C</span> Realizar pruebas de usabilidad remotas.</div>
+            <div class="option"><span class="option-letter">D</span> Definir la estrategia de precios.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 7 (Respuesta)</span>
+        <h2>La técnica de priorización MoSCoW ayuda a los equipos a:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Calcular el TAM de forma precisa.</div>
+            <div class="option correct"><span class="option-letter">B</span> Categorizar características según su
+                importancia y viabilidad para el MVP. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Realizar pruebas de usabilidad remotas.</div>
+            <div class="option"><span class="option-letter">D</span> Definir la estrategia de precios.</div>
+        </div>
+    </div>
+
+    <!-- C8 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 8</span>
+        <h2>La startup Superhuman validó su Product-Market Fit mediante una métrica clave que preguntaba a los usuarios:
+        </h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> ¿Recomendarías este producto a un amigo?</div>
+            <div class="option"><span class="option-letter">B</span> ¿Qué tan satisfecho estás con el producto del 1 al
+                10?</div>
+            <div class="option"><span class="option-letter">C</span> ¿Qué tan triste estarías si no pudieras usar más el
+                producto?</div>
+            <div class="option"><span class="option-letter">D</span> ¿Cuánto pagarías por este producto?</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 8 (Respuesta)</span>
+        <h2>La startup Superhuman validó su Product-Market Fit mediante una métrica clave que preguntaba a los usuarios:
+        </h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> ¿Recomendarías este producto a un amigo?</div>
+            <div class="option"><span class="option-letter">B</span> ¿Qué tan satisfecho estás con el producto del 1 al
+                10?</div>
+            <div class="option correct"><span class="option-letter">C</span> ¿Qué tan triste estarías si no pudieras
+                usar más el producto? <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> ¿Cuánto pagarías por este producto?</div>
+        </div>
+    </div>
+
+    <!-- C9 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 9</span>
+        <h2>En la curva de adopción de clientes, ¿qué segmento viene inmediatamente después de los "Innovadores"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mayoría Temprana</div>
+            <div class="option"><span class="option-letter">B</span> Mayoría Tardía</div>
+            <div class="option"><span class="option-letter">C</span> Rezagados</div>
+            <div class="option"><span class="option-letter">D</span> Early Adopters</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 9 (Respuesta)</span>
+        <h2>En la curva de adopción de clientes, ¿qué segmento viene inmediatamente después de los "Innovadores"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mayoría Temprana</div>
+            <div class="option"><span class="option-letter">B</span> Mayoría Tardía</div>
+            <div class="option"><span class="option-letter">C</span> Rezagados</div>
+            <div class="option correct"><span class="option-letter">D</span> Early Adopters <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+        </div>
+    </div>
+
+    <!-- C10 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 10</span>
+        <h2>El "Método Value-Theory" para calcular el TAM es especialmente útil para:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mercados maduros con muchos datos públicos.</div>
+            <div class="option"><span class="option-letter">B</span> Productos innovadores sin comparables directos.
+            </div>
+            <div class="option"><span class="option-letter">C</span> Startups con recursos limitados.</div>
+            <div class="option"><span class="option-letter">D</span> Calcular el SOM.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 10 (Respuesta)</span>
+        <h2>El "Método Value-Theory" para calcular el TAM es especialmente útil para:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Mercados maduros con muchos datos públicos.</div>
+            <div class="option correct"><span class="option-letter">B</span> Productos innovadores sin comparables
+                directos. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Startups con recursos limitados.</div>
+            <div class="option"><span class="option-letter">D</span> Calcular el SOM.</div>
+        </div>
+    </div>
+
+    <!-- C11 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 11</span>
+        <h2>¿Cuál de las siguientes opciones describe mejor el "principio de falsabilidad" para evitar sesgos?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Diseñar experimentos que solo confirmen tus
+                hipótesis.</div>
+            <div class="option"><span class="option-letter">B</span> Diseñar experimentos que puedan refutar claramente
+                tus hipótesis.</div>
+            <div class="option"><span class="option-letter">C</span> Usar solo datos cualitativos.</div>
+            <div class="option"><span class="option-letter">D</span> Preguntar a los usuarios si les gusta tu idea.
+            </div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 11 (Respuesta)</span>
+        <h2>¿Cuál de las siguientes opciones describe mejor el "principio de falsabilidad" para evitar sesgos?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Diseñar experimentos que solo confirmen tus
+                hipótesis.</div>
+            <div class="option correct"><span class="option-letter">B</span> Diseñar experimentos que puedan refutar
+                claramente tus hipótesis. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> Usar solo datos cualitativos.</div>
+            <div class="option"><span class="option-letter">D</span> Preguntar a los usuarios si les gusta tu idea.
+            </div>
+        </div>
+    </div>
+
+    <!-- C12 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 12</span>
+        <h2>Un enfoque "Top-Down" para el análisis de mercado comienza con:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Datos de los primeros clientes y los extrapola.
+            </div>
+            <div class="option"><span class="option-letter">B</span> El valor que la solución aporta al cliente.</div>
+            <div class="option"><span class="option-letter">C</span> Datos de la industria a nivel macro y los refina.
+            </div>
+            <div class="option"><span class="option-letter">D</span> El número de empleados de la startup.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 12 (Respuesta)</span>
+        <h2>Un enfoque "Top-Down" para el análisis de mercado comienza con:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Datos de los primeros clientes y los extrapola.
+            </div>
+            <div class="option"><span class="option-letter">B</span> El valor que la solución aporta al cliente.</div>
+            <div class="option correct"><span class="option-letter">C</span> Datos de la industria a nivel macro y los
+                refina. <i class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> El número de empleados de la startup.</div>
+        </div>
+    </div>
+
+    <!-- C13 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 13</span>
+        <h2>¿Qué es una "métrica de vanidad"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Una métrica que mide el valor real de tu solución.
+            </div>
+            <div class="option"><span class="option-letter">B</span> Un dato que se ve bien pero no refleja el
+                comportamiento real o el valor (ej. total de registros).</div>
+            <div class="option"><span class="option-letter">C</span> El Costo de Adquisición de Clientes (CAC).</div>
+            <div class="option"><span class="option-letter">D</span> La tasa de retención de usuarios.</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 13 (Respuesta)</span>
+        <h2>¿Qué es una "métrica de vanidad"?</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Una métrica que mide el valor real de tu solución.
+            </div>
+            <div class="option correct"><span class="option-letter">B</span> Un dato que se ve bien pero no refleja el
+                comportamiento real o el valor (ej. total de registros). <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">C</span> El Costo de Adquisición de Clientes (CAC).</div>
+            <div class="option"><span class="option-letter">D</span> La tasa de retención de usuarios.</div>
+        </div>
+    </div>
+
+    <!-- C14 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 14</span>
+        <h2>Típicamente, el SAM representa un rango del TAM de:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 1-10%</div>
+            <div class="option"><span class="option-letter">B</span> 100%</div>
+            <div class="option"><span class="option-letter">C</span> 10-50%</div>
+            <div class="option"><span class="option-letter">D</span> 80-90%</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 14 (Respuesta)</span>
+        <h2>Típicamente, el SAM representa un rango del TAM de:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> 1-10%</div>
+            <div class="option"><span class="option-letter">B</span> 100%</div>
+            <div class="option correct"><span class="option-letter">C</span> 10-50% <i class="fa-solid fa-check"
+                    style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> 80-90%</div>
+        </div>
+    </div>
+
+    <!-- C15 -->
+    <div class="slide">
+        <span class="header-tag">Serie C - Pregunta 15</span>
+        <h2>El primer paso en el proceso de "Customer Development" recordado en las diapositivas es:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Crear prototipos</div>
+            <div class="option"><span class="option-letter">B</span> Priorizar características</div>
+            <div class="option"><span class="option-letter">C</span> Empatía con el Usuario</div>
+            <div class="option"><span class="option-letter">D</span> Escribir código</div>
+        </div>
+    </div>
+    <div class="slide answer-mode">
+        <span class="header-tag">Serie C - Pregunta 15 (Respuesta)</span>
+        <h2>El primer paso en el proceso de "Customer Development" recordado en las diapositivas es:</h2>
+        <div class="options">
+            <div class="option"><span class="option-letter">A</span> Crear prototipos</div>
+            <div class="option"><span class="option-letter">B</span> Priorizar características</div>
+            <div class="option correct"><span class="option-letter">C</span> Empatía con el Usuario <i
+                    class="fa-solid fa-check" style="margin-left:auto;"></i></div>
+            <div class="option"><span class="option-letter">D</span> Escribir código</div>
+        </div>
+    </div>
+
+    <!-- ================= RESOLVER (Parte 2) ================= -->
+    <div class="slide section-slide" style="background: #10b981;">
+        <h1>RESOLVER (PARTE 2)</h1>
+        <p>Casos Finales</p>
+    </div>
+
+    <!-- R3 -->
+    <div class="slide">
+        <span class="header-tag">Caso Práctico 3 (MoSCoW)</span>
+        <h2>Priorización: App Intercambio de Libros</h2>
+        <div class="case-box">
+            <p><strong>Tarea:</strong> Definir Must, Should, Could, Won't have.</p>
+        </div>
+        <div class="case-box solution-box">
+            <p><strong>MUST HAVE (Vital):</strong> Publicar libro + Ver contacto.</p>
+            <p><em>Justificación:</em> Sin esto no hay intercambio. Es la función nuclear que valida la oferta/demanda.
+            </p>
+        </div>
+    </div>
+
+    <!-- R4 -->
+    <div class="slide">
+        <span class="header-tag">Caso Práctico 4 (User Testing)</span>
+        <h2>Selección de Pruebas: Tienda Online Ropa</h2>
+        <div class="case-box">
+            <p><strong>Duda:</strong> ¿La estructura de categorías (Hombres > Camisetas) es intuitiva?</p>
+            <p><strong>Opciones:</strong> Pruebas de Usabilidad, Primer clic, Pruebas de Árbol.</p>
+        </div>
+        <div class="case-box solution-box">
+            <p><strong>Elección Correcta:</strong> Pruebas de Árbol (Tree Testing).</p>
+            <p><em>Justificación:</em> Es la única prueba diseñada específicamente para validar la Arquitectura de
+                Información sin que el diseño visual distraiga.</p>
+        </div>
+    </div>
+
+    <!-- FIN -->
+    <div class="slide section-slide">
+        <h1>¡FIN!</h1>
+        <p>Has completado todo el banco de preguntas.</p>
+    </div>
+
+</body>
+
+</html>
